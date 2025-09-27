@@ -1,0 +1,23 @@
+[
+  {
+    "firstName": "Isabella",
+    "lastName": "Price",
+    "email": "isabellarose@gmail.com",
+    "favoriteColor": "blue",
+    "birthday": "2006-09-08"
+  },
+  {
+    "firstName": "Clarke",
+    "lastName": "Price",
+    "email": "pricecla003@my.jordandistrict.org",
+    "favoriteColor": "dark blue",
+    "birthday": "2011-06-11"
+  },
+  {
+    "firstName": "Jennifer",
+    "lastName": "Price",
+    "email": "jennericprice@gmail.com",
+    "favoriteColor": "pink",
+    "birthday": "1987-07-05"
+  }
+]

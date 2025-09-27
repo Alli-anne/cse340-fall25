@@ -2,3 +2,13 @@ GET http://localhost:3000 HTTP/1.1
 
 ###
 GET http://localhost:3000/cool HTTP/1.1
+
+###
+GET http://localhost:3000/contact HTTP/1.1
+###
+GET http://localhost:3000/contact/68d723864cbbee8b6d184a47 HTTP/1.1
+###
+GET http://localhost:3000/contact/68d723864cbbee8b6d184a48 HTTP/1.1
+
+###
+GET http://localhost:3000/contact/68d723864cbbee8b6d184a49 HTTP/1.1
