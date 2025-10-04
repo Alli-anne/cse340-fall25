@@ -4,7 +4,7 @@ GET http://localhost:3000 HTTP/1.1
 GET http://localhost:3000/cool HTTP/1.1
 
 ###
-GET http://localhost:3000/contact HTTP/1.1
+GET http://localhost:3000/contacts HTTP/1.1
 ###
 GET http://localhost:3000/contact/68d723864cbbee8b6d184a47 HTTP/1.1
 ###
@@ -12,3 +12,29 @@ GET http://localhost:3000/contact/68d723864cbbee8b6d184a48 HTTP/1.1
 
 ###
 GET http://localhost:3000/contact/68d723864cbbee8b6d184a49 HTTP/1.1
+### Create a new contact (POST)
+POST http://localhost:3000/api/contacts
+Content-Type: application/json
+ {
+    "_id": "68d723864cbbee8b6d184a48",
+    "firstName": "Clarke",
+    "lastName": "Price",
+    "email": "pricecla003@my.jordandistrict.org",
+    "favoriteColor": "dark blue",
+    "birthday": "2011-06-11"
+  }
+
+### Update Contact - Success
+PUT http://localhost:3000/contact/68d723864cbbee8b6d184a49
+Content-Type: application/json
+
+{
+  "firstName": "Jennifer",
+  "lastName": "Price",
+  "email": "jennprice@gamil.com",
+  "favoriteColor": "green",
+  "birthday": "1990-01-01"
+}
+###
+DELETE http://localhost:3000/contact/68d723864cbbee8b6d184a48
+Content-Type: application/json

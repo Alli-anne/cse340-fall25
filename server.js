@@ -12,13 +12,15 @@ const {initDb} = require('./database/connect');
 
 app
     .use(bodyParser.json())              // for JSON request bodies
-.use(bodyParser.urlencoded({ extended: true })) // for form submissions
+    .use(bodyParser.urlencoded({ extended: true })) // for form submissions
     .use((req, res, next) => {
         res.setHeader('Access-Control-Allow-Origin', '*');
         next();
     })
     .use ('/', require("./routes"))
     .use('/', contactRoutes);
+    app.use('/api', contactRoutes);
+
 
 mongodb.initDb()
   .then(() => {
