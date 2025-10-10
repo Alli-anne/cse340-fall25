@@ -8,7 +8,7 @@
   "host": "cse340-fall25.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/cool": {
