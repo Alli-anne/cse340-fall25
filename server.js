@@ -5,7 +5,8 @@ const bodyParser = require('body-parser');
 const port = process.env.PORT || 3000;
 const mongodb = require('./database/connect');
 const contactRoutes = require('./routes/contact');
-
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
 
 const {initDb} = require('./database/connect');
 

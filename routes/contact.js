@@ -1,8 +1,9 @@
 const routes = require('express').Router();
 const myControllers = require('../controllers/index');
 const contactsController = require('../controllers/contactsController');
+const swagger = require('./swagger');
 
-
+routes.use('/', swagger);
 routes.get('/contacts', contactsController.getAllContacts);
 routes.get('/contact/:id', contactsController.getContactID);
 
