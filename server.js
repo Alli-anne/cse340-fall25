@@ -21,6 +21,8 @@ app
     .use ('/', require("./routes"))
     .use('/', contactRoutes);
     app.use('/api', contactRoutes);
+    app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 
 
 mongodb.initDb()
